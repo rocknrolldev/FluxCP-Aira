@@ -11,7 +11,7 @@ return array(
 	'DefaultCharMapServer'		=> null,
 	'DefaultLanguage'			=> 'en_us',					// Specify the default control panel language (see FLUX_ROOT/lang/ directory for available languages.)
 	'SiteTitle'					=> 'Flux Control Panel',	// This value is only used if the theme decides to use it.
-	'ThemeName'					=> array('default', 'bootstrap'), // Names of the themes you would like list for use in the footer. Themes are in FLUX_ROOT/themes.
+	'ThemeName'					=> array('aria'), // Names of the themes you would like list for use in the footer. Themes are in FLUX_ROOT/themes.
 	'ScriptTimeLimit'			=> 0,						// Script execution time limit. Specifies (in seconds) how long a page should run before timing out. (0 means forever)
 	'MissingEmblemBMP'			=> 'empty.bmp',				//
 	'ItemIconNameFormat'		=> '%d.png',				// The filename format for item icons (defaults to {itemid}.png).
@@ -77,7 +77,7 @@ return array(
 	'OutputCleanHTML'			=> true,					// Use this if you have Tidy installed to clean your HTML output when serving pages.
 	'ShowCopyright'				=> true,					// Whether or not to show the copyright footer.
 	'ShowRenderDetails'			=> true,					// Shows the "page rendered in X seconds" and "number of queries executed: X" in the default theme.
-	'UseCleanUrls'				=> false,					// Set to true if you're running Apache and it supports mod_rewrite and .htaccess files.
+	'UseCleanUrls'				=> true,					// Set to true if you're running Apache and it supports mod_rewrite and .htaccess files.
 	'DebugMode'					=> false,					// Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
 	'UseCaptcha'				=> false,					// Use CAPTCHA image for account registration to prevent automated account creations. (Requires GD2/FreeType2)
 	'UseLoginCaptcha'			=> false,					// Use CAPTCHA image for account logins. (Requires GD2/FreeType2)
@@ -544,6 +544,17 @@ return array(
 		'ServiceDeskSettingsTable'	=> 'cp_servicedesksettings',
 		'WebCommandsTable'		=> 'cp_commands',
         'ItemDescTable'     	=> 'cp_itemdesc',
+		
+		// RagProject
+		'CMSBlogsTable'         => 'ragproject_blog',
+        'CMSDownloadsTable'         => 'ragproject_downloads',
+        'CMSFeaturesTable'         => 'ragproject_features',
+        'CMSCashShopsTable'         => 'ragproject_cashshop',
+        'CMSSettingsTable'         => 'ragproject_setting',
+        'CMSNpcsTable'         => 'ragproject_npc',
+        'CMSStreamersTable'         => 'ragproject_streamers',
+        'CMSReferralsTable'         => 'ragproject_referrals',
+        'CMSQuestShopsTable'         => 'ragproject_questshop',
 	)
 );
 ?>
