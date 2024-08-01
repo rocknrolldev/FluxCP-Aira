@@ -1,3 +1,7 @@
+# Config
+/config/application.php
+/config/servers.php
+
 # Images
 /data/items/icons/*.png
 /data/items/images/*.png
