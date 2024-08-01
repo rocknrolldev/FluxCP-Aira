@@ -25,6 +25,7 @@
 !/themes/default
 !/themes/bootstrap
 !/themes/installer
+!/themes/aria
 
 # Import Configs
 /config/import
